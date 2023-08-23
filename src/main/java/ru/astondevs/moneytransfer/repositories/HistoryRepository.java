@@ -1,4 +1,4 @@
-package ru.astondevs.moneytransfer.repository;
+package ru.astondevs.moneytransfer.repositories;
 
 import org.springframework.data.repository.ListCrudRepository;
 import ru.astondevs.moneytransfer.entities.TransactionsHistory;

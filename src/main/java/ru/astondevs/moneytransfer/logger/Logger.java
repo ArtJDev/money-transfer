@@ -2,7 +2,7 @@ package ru.astondevs.moneytransfer.logger;
 
 import org.springframework.stereotype.Component;
 import ru.astondevs.moneytransfer.entities.TransactionsHistory;
-import ru.astondevs.moneytransfer.repository.HistoryRepository;
+import ru.astondevs.moneytransfer.repositories.HistoryRepository;
 
 @Component
 public class Logger {

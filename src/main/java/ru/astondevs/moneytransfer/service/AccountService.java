@@ -12,8 +12,8 @@ import ru.astondevs.moneytransfer.entities.TransactionsHistory;
 import ru.astondevs.moneytransfer.exceptions.AccountNotFoundException;
 import ru.astondevs.moneytransfer.exceptions.AccountException;
 import ru.astondevs.moneytransfer.logger.Logger;
-import ru.astondevs.moneytransfer.repository.AccountRepository;
-import ru.astondevs.moneytransfer.repository.HistoryRepository;
+import ru.astondevs.moneytransfer.repositories.AccountRepository;
+import ru.astondevs.moneytransfer.repositories.HistoryRepository;
 
 import java.util.ArrayList;
 import java.util.List;

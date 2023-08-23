@@ -1,4 +1,4 @@
-package ru.astondevs.moneytransfer.repository;
+package ru.astondevs.moneytransfer.repositories;
 
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
