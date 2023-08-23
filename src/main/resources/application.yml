@@ -1,0 +1,22 @@
+server:
+  port: 9090
+  shutdown: graceful
+  tomcat:
+    connection-timeout: 2s
+    keep-alive-timeout: 15s
+    threads:
+      max: 50
+      min-spare: 5
+
+spring:
+  application:
+    name: money-transfer
+  lifecycle:
+    timeout-per-shutdown-phase: 15s
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgresdb
+    username: user
+    password: password
+    hikari:
+      connection-timeout: 2000 #ms
+      maximum-pool-size: 5
