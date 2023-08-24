@@ -32,7 +32,7 @@ public class AccountController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public AccountInfo createAccount(String accountOwner, int pinNumber) {
+    public AccountInfo createAccount(@RequestParam String accountOwner, @RequestParam int pinNumber) {
         return accountService.createAccount(accountOwner, pinNumber);
     }
 
@@ -47,7 +47,7 @@ public class AccountController {
     }
 
     @PostMapping("/withdraw/{accountNumber}")
-    public String withdrawAmount(@PathVariable("accountNumber") int accountNumber, DepositWithdraw depositWithdraw) {
+    public String withdrawAmount(@PathVariable("accountNumber") int accountNumber, @RequestBody DepositWithdraw depositWithdraw) {
         return accountService.withdraw(accountNumber, depositWithdraw);
     }
 }
